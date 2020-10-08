@@ -76,7 +76,6 @@ def mbf():
          def masuk():
              try:
             cek = open("cookies").read()
-             except FileNotFoundError:
                     cek = input("\033[90m> \033[00mCoookies : \033[1;92m")
              cek = {"cookie":cek}
              ismi = ses.get(mbasic.format("/me",verify=False),cookies=cek).content
